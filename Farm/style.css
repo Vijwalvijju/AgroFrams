@@ -1,0 +1,172 @@
+/* Add or modify styles as needed */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('striped-vineyard-rows-aerial-view-panorama-generated-by-ai.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for navigation bar */
+    padding: 10px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.brand-name {
+    flex-grow: 1; /* This allows the brand name to take up the remaining space and be centered */
+    text-align: center;
+}
+
+.brand-name h1 {
+    margin: 0;
+    font-size: 20px; /* Adjust the font size as needed */
+}
+
+/* Add animation styles for the nav links */
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a i {
+    position: absolute;
+    left: -20px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links li:hover a i {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.logo img {
+    max-height: 40px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.co{
+    color: rgb(251, 253, 253);
+    font-weight: 900;
+    font-family:'Times New Roman', Times, serif;
+    font-size:400;
+    font-style:inherit;
+}
+
+.main-content {
+    text-align: center;
+    padding: 50px;
+}
+
+.content-header {
+    margin-bottom: 40px;
+}
+
+.content-header img {
+    max-width: 100px;
+}
+
+.content-boxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-box {
+    width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.content-box:hover {
+    transform: scale(1.05);
+}
+
+.content-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box-content {
+    padding: 20px;
+    background-color: rgba(90, 129, 89, 0.7);
+}
+
+.horizontal-content {
+    background-color: rgba(85, 102, 85, 0.8);
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.icon-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.icon-box {
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.icon-box img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.icon-box:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for footer */
+    color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
